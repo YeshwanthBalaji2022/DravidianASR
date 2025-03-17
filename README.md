@@ -1,13 +1,12 @@
-# Automatic Speech Recognition (ASR) Models for Indian Languages
+# Automatic Speech Recognition (ASR) Models for Dravidian Languages
 
-This repository contains implementations and fine-tuning results for three state-of-the-art ASR models: **HuBERT**, **Wav2Vec2**, and **Whisper**. Each model is fine-tuned on Indian language speech datasets for improved transcription accuracy.
+This repository contains implementations and fine-tuning results for three state-of-the-art ASR models: **HuBERT**, **Wav2Vec2**, and **Whisper**. Each model is fine-tuned on Dravidian language speech datasets for improved transcription accuracy.
 
 ## Repository Structure
 ```
 ├── hubertMal.ipynb        # Fine-tuning HuBERT for Malayalam ASR
 ├── whisperTam.ipynb       # Fine-tuning Whisper for Tamil ASR
 ├── wav2vecTam.ipynb       # Fine-tuning Wav2Vec2 for Tamil ASR
-├── sample_predictions/    # Predicted outputs from all models
 └── README.md              # Project documentation (this file)
 ```
 
@@ -22,7 +21,7 @@ This repository contains implementations and fine-tuning results for three state
 
 **Sample Prediction:**
 - **Prediction:** അനുമാനിയില് പ്രയാനിക്കുകാനുന്നതിരന്നമേ ചരത്തായിടും
-- **Ground Truth:** അനുമാനിയില് പ്രയാനിക്കുകാനുന്നതിരന്നമേ ചരത്തായിടും
+- **Ground Truth:** അനുമാകായില് പ്രയാനിക്കുകാനുന്നരന്നമേ രത്തായിടും
 
 ---
 
@@ -33,7 +32,7 @@ This repository contains implementations and fine-tuning results for three state
 
 **Sample Prediction:**
 - **Prediction:** நண்கிகக் நல்லிகக் பெரிக்கவே செல்வ்வோன்
-- **Ground Truth:** நண்கிகக் நல்லிகக் பெரிக்கவே செல்வ்வோன்
+- **Ground Truth:** நரிகிகக் நல்லிகக் பெரிக்கவே செல்வ்வோன்
 
 ---
 
@@ -74,11 +73,11 @@ This repository contains implementations and fine-tuning results for three state
 
 ### Installation
 ```bash
-pip install torch transformers datasets librosa
+pip install kagglehub evaluate transformers jiwer bitsandbytes
 ```
 
 ### Running the Notebooks
-1. Open each `.ipynb` file in Google Colab, Jupyter Notebook, or Kaggle.
+1. Open each `.ipynb` file in Google Colab, Jupyter Notebook, or Kaggle(Recommended).
 2. Follow the instructions in the notebook for dataset preparation, training, and evaluation.
 3. The model outputs will be saved in their respective output directories.
 
